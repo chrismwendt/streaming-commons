@@ -30,8 +30,6 @@ library
                        Data.Streaming.ByteString.Builder.Buffer
                        Data.Streaming.FileRead
                        Data.Streaming.Filesystem
-                       Data.Streaming.Network
-                       Data.Streaming.Network.Internal
                        Data.Streaming.Process
                        Data.Streaming.Process.Internal
                        Data.Streaming.Text
@@ -43,7 +41,6 @@ library
                      , async
                      , bytestring
                      , directory
-                     , network >= 2.4.0.0
                      , random
                      , process
                      , stm
@@ -78,7 +75,6 @@ test-suite test
     other-modules:  Data.Streaming.ByteString.BuilderSpec
                     Data.Streaming.FileReadSpec
                     Data.Streaming.FilesystemSpec
-                    Data.Streaming.NetworkSpec
                     Data.Streaming.ProcessSpec
                     Data.Streaming.TextSpec
                     Data.Streaming.ZlibSpec
@@ -91,7 +87,6 @@ test-suite test
                   , async
                   , bytestring
                   , deepseq
-                  , network >= 2.4.0.0
                   , text
                   , zlib
     build-tool-depends:
